@@ -1,9 +1,5 @@
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     border-radius: 10px;
     background: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
@@ -15,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    padding-top: 40px;
     gap: 10px;
 }
 
@@ -70,6 +66,15 @@
 
 .dataText {
     font-size: 20px;
+}
+
+@media screen and (min-device-width: 1000px)and (orientation: landscape) {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media screen and (max-device-width: 500px) and (orientation: portrait) {
