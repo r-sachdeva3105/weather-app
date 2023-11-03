@@ -1,0 +1,81 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+    color: #ebfffc;
+    width: 500px;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.cityInput {
+    width: 60%;
+    height: 50px;
+    background: #ebfffc;
+    color: #626262;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.searchIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebfffc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.weatherTemp {
+    font-size: 100px;
+}
+
+.weatherLocation {
+    font-size: 50px;
+}
+
+.dataContainer {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.element {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    gap: 15px;
+}
+
+.dataValue {
+    font-size: 30px;
+}
+
+.dataText {
+    font-size: 20px;
+}
+
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+}
